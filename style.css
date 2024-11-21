@@ -1,0 +1,156 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body and General Styles */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f9f9f9;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #0b570b;
+    color: #fff;
+    padding: 1rem 2rem;
+}
+
+header .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+header nav ul {
+    display: flex;
+    list-style: none;
+}
+
+header nav ul li {
+    margin: 0 1rem;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.hero {
+    text-align: center;
+    padding: 4rem 2rem;
+    background: #0b570b;
+    color: #fff;
+}
+
+.hero button {
+    padding: 0.5rem 1rem;
+    background: #fff;
+    color: #0b570b;
+    border: none;
+    cursor: pointer;
+}
+
+section {
+    padding: 2rem;
+    text-align: center;
+}
+
+.services-container {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 1rem;
+    /* background: #0b570b; */
+    /* background: #0b570b; */
+}
+
+.services-container2 {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 3rem;
+    
+}
+
+.service {
+    background: #0b570b;
+    padding: 1rem;
+    border: 1px solid #0b570b;
+    border-radius: 5px;
+    width: 30%;
+    color: #efdede;
+}
+
+/* .services{
+    background: #b73c65;
+} */
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+form input, form textarea {
+    width: 80%;
+    padding: 0.5rem;
+    margin: 0.5rem 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form button {
+    padding: 0.5rem 1rem;
+    background: #0b570b;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+footer {
+    text-align: center;
+    background: #333;
+    color: #fff;
+    padding: 1rem;
+}
+
+.logo img {
+    width: 50px;  /* Set the logo width */
+    height: auto;  /* Maintain the aspect ratio */
+    /* margin-bottom: 10px;  Space between the logo and text */
+    display: block;  /* Make the image block-level element */
+    /* margin: 10 auto 10px; */
+}
+
+/* .logo-text {
+    font-size: 24px;  /* Font size for "CalmNest" */
+    /* font-weight: bold;  Optional: Make the text bold */
+    /* color: #333;  Text color */
+    /* margin-bottom: 20px;   */ 
+/* } */
+
+.logo-text {
+    font-size: 19px;  /* Font size for CalmNest */
+    font-weight: bold;
+    color: #efdede;
+    display: inline-block;  /* Keeps the text below the logo */
+    display: flex;
+    justify-content: flex-start; /* Aligns content to the left */
+    margin-left: -580px;
+    font-family: 'Apricots'; 
+}
+
+/* .slogan {
+    font-size: 16px;  
+    color: #efdede;  
+    margin-top: 70px;
+    margin-left: -690px;  
+} */
+
+/* .foot{
+    background: #0b570b;
+} */
