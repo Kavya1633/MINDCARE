@@ -1,1 +1,5 @@
+<<<<<<< HEAD
 # MINDCARE
+=======
+# MIND CARE
+>>>>>>> 1e670d38d771ed83aee27965c437b5df16d53565
