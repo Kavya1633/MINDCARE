@@ -1,4 +1,10 @@
 /* General Reset */
+:root{
+    --main-bg-color:#0b570b;
+    --white:#fff;
+    --sec-color:darkred;
+    --orange:rgb(251, 195, 145);
+}
 * {
     margin: 0;
     padding: 0;
@@ -17,8 +23,8 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background: #0b570b;
-    color: #fff;
+    background: var(--main-bg-color);
+    color:var(--white);
     padding: 1rem 2rem;
 }
 
@@ -37,7 +43,7 @@ header nav ul li {
 }
 
 header nav ul li a {
-    color: #fff;
+    color:var(--white);
     text-decoration: none;
 }
 
@@ -82,8 +88,8 @@ header nav ul li a {
 
 .hero button {
     padding: 0.5rem 1rem;
-    background: #fff;
-    color: #0b570b;
+    background:var(--white);
+    color:var(--main-bg-color);
     border: none;
     cursor: pointer;
 }
@@ -109,16 +115,16 @@ section {
 }
 
 .service {
-    background: #0b570b;
+    background: var(--main-bg-color);
     padding: 1rem;
-    border: 1px solid #0b570b;
+    border: 1px solid var(--main-bg-color);
     border-radius: 5px;
     width: 30%;
     color: #efdede;
 }
 
 /* .services{
-    background: #b73c65;
+    background: #f3d1c6;
 } */
 
 form {
@@ -137,8 +143,8 @@ form input, form textarea {
 
 form button {
     padding: 0.5rem 1rem;
-    background: #0b570b;
-    color: #fff;
+    background: var(--main-bg-color);
+    color: var(--white);
     border: none;
     cursor: pointer;
 }
@@ -146,7 +152,7 @@ form button {
 footer {
     text-align: center;
     background: #333;
-    color: #fff;
+    color:var(--white);
     padding: 1rem;
 }
 
@@ -166,13 +172,13 @@ footer {
 /* } */
 
 .logo-text {
-    font-size: 19px;  /* Font size for CalmNest */
+    font-size: 24px;  /* Font size for CalmNest */
     font-weight: bold;
     color: #efdede;
     display: inline-block;  /* Keeps the text below the logo */
     display: flex;
     justify-content: flex-start; /* Aligns content to the left */
-    margin-left: -580px;
+    margin-left: -750px;
     font-family: 'Apricots'; 
 }
 
@@ -186,3 +192,59 @@ footer {
 /* .foot{
     background: #0b570b;
 } */
+.Blogs h2{
+    font-weight: 1000;
+    font-size: 35px;
+    color: var(--sec-color);
+    padding-bottom: 15px;
+}
+.container{
+    max-width: 1200px;
+    margin: 10px auto;
+    display: flex;
+    flex-wrap: wrap;
+    padding-bottom: 3rem;
+}
+.box{
+    width: 380px;
+    height: 310px;
+    margin: 10px;
+    background-color:var(--white);
+    color:rgb(0, 0, 0);
+    padding: 15px;
+    text-align: center;
+    border-radius: 0.8rem;
+}
+.box:hover{
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px;
+}
+.Blogs{
+    margin-left: 100px;
+    margin-right: 100px;
+    text-align: center;
+    margin-top: 0px;
+}
+.Blogs-post{
+    background-image: linear-gradient(rgb(255, 255, 255), rgba(251, 225, 203, 0.859));
+    margin-top: -40px;
+}
+.blog-desc{
+    padding: 30px;
+}
+.Blogs img{
+    height: 180px;
+    width: 360px;
+    margin:0px -10px;
+}
+button{
+    margin-top: 8px;
+    margin-left: -220px;
+    padding: 10px 20px;
+    border-radius: 1.5rem;
+    border:solid var(--orange);
+    background-color: #fff;
+}
+button:hover{
+    background-color:rgb(251, 195, 145);
+    color: black;
+}
