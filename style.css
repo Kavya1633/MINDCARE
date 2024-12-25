@@ -25,7 +25,7 @@ header {
     align-items: center;
     background: var(--main-bg-color);
     color:var(--white);
-    padding: 1rem 2rem;
+    padding: 0.5rem 2rem;
 }
 
 header .logo {
@@ -40,6 +40,7 @@ header nav ul {
 
 header nav ul li {
     margin: 0 1rem;
+    font-size: large;
 }
 
 header nav ul li a {
@@ -53,6 +54,13 @@ header nav ul li a {
     background: #fff;
     color: #0d0d0d;
 } */
+#navbar{
+    position: sticky;
+    top: 0;
+    overflow: hidden;
+    background-color: #0b570b;
+
+}
 
 
 .hero {
@@ -192,6 +200,8 @@ footer {
 /* .foot{
     background: #0b570b;
 } */
+
+ /* Blogs home page section */
 .Blogs h2{
     font-weight: 1000;
     font-size: 35px;
@@ -203,11 +213,11 @@ footer {
     margin: 10px auto;
     display: flex;
     flex-wrap: wrap;
-    padding-bottom: 3rem;
+    padding-bottom: 0.2rem;
 }
 .box{
     width: 380px;
-    height: 310px;
+    height: 320px;
     margin: 10px;
     background-color:var(--white);
     color:rgb(0, 0, 0);
@@ -236,6 +246,14 @@ footer {
     width: 360px;
     margin:0px -10px;
 }
+.blog-button{
+margin: 10px;
+font-size: large;
+border-radius: 0.5rem;
+background: var(--sec-color);
+color: var(--white);
+}
+
 button{
     margin-top: 8px;
     margin-left: -220px;
@@ -248,3 +266,61 @@ button:hover{
     background-color:rgb(251, 195, 145);
     color: black;
 }
+
+/* Resource page section */
+.Resource-container{
+    max-width: 1200px;
+    margin: 10px 120px;
+    display: flex;
+    flex-wrap: wrap;
+    padding-bottom: 0.2rem;
+}
+
+.Resource-box:hover{
+    box-shadow: rgba(0, 0, 0, 9.5) 0px 10px 15px;
+}
+.img__wrap img{
+    width: 500px;
+    height:300px ;
+    border-radius: 2rem;
+}
+.img__description_layer {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    /* background: rgba(36, 62, 206, 0.6); */
+    background: rgba(156, 109, 1, 0.6);
+    color: #fff;
+    visibility: hidden;
+    opacity: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: opacity .2s, visibility .2s;
+    border-radius: 2rem;
+}
+.img__wrap:hover .img__description_layer {
+    visibility: visible;
+    opacity: 1;
+  }
+  
+  .img__description {
+    transition: .2s;
+    transform: translateY(1em);
+    font-size: xx-large;
+    font-weight: bold;
+  }
+  
+  .img__wrap:hover .img__description {
+    transform: translateY(0);
+  }
+  .img__wrap {
+    position: relative;
+    height: 300px;
+    width:500px;
+    margin: 30px;
+    padding: auto;
+    border-radius: 2rem;
+  }
