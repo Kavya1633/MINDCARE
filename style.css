@@ -39,8 +39,7 @@ header nav ul {
 }
 
 header nav ul li {
-    margin: 0 0.8rem;
-    font-size: large;
+    margin: 0 1rem;
 }
 
 header nav ul li a {
@@ -268,18 +267,6 @@ footer {
     width: 360px;
     margin:0px -10px;
 }
-.blog-button{
-margin: 10px;
-font-size: large;
-border-radius: 0.5rem;
-background: var(--sec-color);
-color: var(--white);
-}
-.blog-button:hover{
-    background: var(--sec-color);
-    color: var(--white); 
-}
-
 button{
     margin-top: 8px;
     margin-left: -220px;
@@ -292,141 +279,3 @@ button:hover{
     background-color:rgb(251, 195, 145);
     color: black;
 }
-
-/* Resource page section */
-.Resource-container{
-    max-width: 1200px;
-    margin: 10px 120px;
-    display: flex;
-    flex-wrap: wrap;
-    padding-bottom: 0.2rem;
-}
-
-.Resource-box:hover{
-    box-shadow: rgba(0, 0, 0, 9.5) 0px 10px 15px;
-}
-.img__wrap img{
-    width: 500px;
-    height:300px ;
-    border-radius: 2rem;
-}
-.img__description_layer {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    /* background: rgba(36, 62, 206, 0.6); */
-    background: rgba(156, 109, 1, 0.6);
-    color: #fff;
-    visibility: hidden;
-    opacity: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transition: opacity .2s, visibility .2s;
-    border-radius: 2rem;
-}
-.img__wrap:hover .img__description_layer {
-    visibility: visible;
-    opacity: 1;
-  }
-  
-  .img__description {
-    transition: .2s;
-    transform: translateY(1em);
-    font-size: xx-large;
-    font-weight: bold;
-  }
-  
-  .img__wrap:hover .img__description {
-    transform: translateY(0);
-  }
-  .img__wrap {
-    position: relative;
-    height: 300px;
-    width:500px;
-    margin: 30px;
-    padding: auto;
-    border-radius: 2rem;
-  }
-
-
- /* service page */
-
- .tablink {
-    background-color: var(--sec-color);
-    color: white;
-    /* float: right; */
-    border: none ;
-    outline: none;
-    cursor:pointer;
-    padding: 14px 16px;
-    font-size: 17px;
-    width: 15%;
-    align-items: center;
-    margin: 2rem -0.1rem;
-    border-radius: 5px;
-    justify-content: center;
-    align-items: center;
-    /* display: flex; */
-  }
-  .first{
-    margin-left: 25rem;
-  }
-  
-  .tablink:hover {
-    background-color: rgba(139, 0, 0, 0.722);
-    color: #0d0d0d;
-    /* background-color: var(--orange); */
-  }
-  
-  /* Style the tab content (and add height:100% for full page content) */
-  .tabcontent {
-    color: rgb(10, 0, 0);
-    display: none;
-    padding: 40px 10px;
-    margin: 1px 60px;
-    height: 195vh;
-    margin-bottom: 3rem;
-    border:double 2px #0d0d0d;
-  }
-  
-  #Podcast {background-image: linear-gradient(var(--white),var(--white)); }
-  #Workshops {background-image: linear-gradient(var(--white));}
-  #Therapysession {background-image: linear-gradient(var(--white));}
-  
-    .pod-container{
-    height: 400px;
-    width: 300px;
-    /* background-color: #0300003e; */
-    /* background-image: url(images/podcast.png); */
-    align-items: center;
-    border-radius: 1rem;
-    margin-left: 250px;
-    margin-bottom: 2rem;
-    max-width: 1000px;
-    }
-    /* .pod-container img{
-        height: 100px;
-        width: 150px;
-        margin-left: -250px;
-        margin-top: 0%;
-    } */
-    .pod-container1{
-        height: 350px;
-        width: 600px;
-        /* background-color: #0300003e; */
-        align-items: center;
-        /* border-radius: 1rem; */
-        margin: -0.3rem 1.8rem;
-        /* border: solid 2px black; */
-    }
-    .pod-class{
-        display: flex;
-        margin: 0.5rem;
-    }
-      
-
-      
-      
