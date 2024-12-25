@@ -16,7 +16,7 @@ body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
     color: #333;
-    background-color: #f9f9f9;
+    background-color:var(--white);
 }
 
 header {
@@ -29,7 +29,7 @@ header {
 }
 
 header .logo {
-    font-size: 1.5rem;
+    font-size: 2.5rem;
     font-weight: bold;
 }
 
@@ -39,7 +39,7 @@ header nav ul {
 }
 
 header nav ul li {
-    margin: 0 1rem;
+    margin: 0 0.8rem;
     font-size: large;
 }
 
@@ -64,11 +64,11 @@ header nav ul li a {
 
 
 .hero {
-    background-image: url('images/peace.jpg'); /* Replace 'your-image-path.jpg' with the path to your image */
-    background-size: cover; /* Ensures the image covers the entire section */
-    background-position: center; /* Centers the image */
-    background-repeat: no-repeat; /* Prevents the image from repeating */
-    height: 100vh; /* Makes the section full viewport height */
+    background-image: url('images/backdrop.png'); /* Replace 'your-image-path.jpg' with the path to your image */
+    background-size:cover; /* Ensures the image covers the entire section */
+    background-position:center; /* Centers the image */
+    background-repeat:no-repeat; /* Prevents the image from repeating */
+    height: 90vh; /*Makes the section full viewport height */ 
     color: #0d0d0d; /* Ensures text is readable on a darker image */
     display: flex;
     flex-direction: column;
@@ -106,6 +106,12 @@ section {
     padding: 2rem;
     text-align: center;
 }
+#about{
+    margin: 0rem 3rem;
+    text-align: center;
+    padding: 2rem 2rem;
+    margin-bottom: -1.5rem;
+}
 
 .services-container {
     display: flex;
@@ -124,37 +130,53 @@ section {
 
 .service {
     background: var(--main-bg-color);
-    padding: 1rem;
+    padding: 0.5rem;
     border: 1px solid var(--main-bg-color);
     border-radius: 5px;
     width: 30%;
-    color: #efdede;
+    color:var(--white);
 }
 
-/* .services{
-    background: #f3d1c6;
-} */
-
+.services{
+    margin-bottom: 3rem;
+    font-size: larger;
+}
+#contact{
+    margin-left: 400px;
+}
+.contact-img{
+    float: left;
+}
+.contact-img img{
+    margin-left: 10rem;
+    padding: 2rem;
+    height:370px;
+    width:400px;
+}
 form {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items:center;
 }
 
 form input, form textarea {
-    width: 80%;
-    padding: 0.5rem;
-    margin: 0.5rem 0;
+    font-size: 15px;
+    width: 70%;
+    padding: 0.8rem;
+    margin: 0.5rem 0rem;
     border: 1px solid #ccc;
-    border-radius: 5px;
+    border-radius: 8px;
 }
 
 form button {
-    padding: 0.5rem 1rem;
+    padding: 0.8rem 3rem;
     background: var(--main-bg-color);
     color: var(--white);
     border: none;
     cursor: pointer;
+    font-size: 16px;
+    margin-left: 10px;
+    border-radius: 0.5rem;
 }
 
 footer {
@@ -235,7 +257,7 @@ footer {
     margin-top: 0px;
 }
 .Blogs-post{
-    background-image: linear-gradient(rgb(255, 255, 255), rgba(251, 225, 203, 0.859));
+    background-image: linear-gradient(var(--white), rgba(251, 225, 203, 0.859));
     margin-top: -40px;
 }
 .blog-desc{
@@ -252,6 +274,10 @@ font-size: large;
 border-radius: 0.5rem;
 background: var(--sec-color);
 color: var(--white);
+}
+.blog-button:hover{
+    background: var(--sec-color);
+    color: var(--white); 
 }
 
 button{
@@ -324,3 +350,83 @@ button:hover{
     padding: auto;
     border-radius: 2rem;
   }
+
+
+ /* service page */
+
+ .tablink {
+    background-color: var(--sec-color);
+    color: white;
+    /* float: right; */
+    border: none ;
+    outline: none;
+    cursor:pointer;
+    padding: 14px 16px;
+    font-size: 17px;
+    width: 15%;
+    align-items: center;
+    margin: 2rem -0.1rem;
+    border-radius: 5px;
+    justify-content: center;
+    align-items: center;
+    /* display: flex; */
+  }
+  .first{
+    margin-left: 25rem;
+  }
+  
+  .tablink:hover {
+    background-color: rgba(139, 0, 0, 0.722);
+    color: #0d0d0d;
+    /* background-color: var(--orange); */
+  }
+  
+  /* Style the tab content (and add height:100% for full page content) */
+  .tabcontent {
+    color: rgb(10, 0, 0);
+    display: none;
+    padding: 40px 10px;
+    margin: 1px 60px;
+    height: 195vh;
+    margin-bottom: 3rem;
+    border:double 2px #0d0d0d;
+  }
+  
+  #Podcast {background-image: linear-gradient(var(--white),var(--white)); }
+  #Workshops {background-image: linear-gradient(var(--white));}
+  #Therapysession {background-image: linear-gradient(var(--white));}
+  
+    .pod-container{
+    height: 400px;
+    width: 300px;
+    /* background-color: #0300003e; */
+    /* background-image: url(images/podcast.png); */
+    align-items: center;
+    border-radius: 1rem;
+    margin-left: 250px;
+    margin-bottom: 2rem;
+    max-width: 1000px;
+    }
+    /* .pod-container img{
+        height: 100px;
+        width: 150px;
+        margin-left: -250px;
+        margin-top: 0%;
+    } */
+    .pod-container1{
+        height: 350px;
+        width: 600px;
+        /* background-color: #0300003e; */
+        align-items: center;
+        /* border-radius: 1rem; */
+        margin: -0.3rem 1.8rem;
+        /* border: solid 2px black; */
+    }
+    .pod-class{
+        display: flex;
+        margin: 0.5rem;
+    }
+      
+
+      
+      

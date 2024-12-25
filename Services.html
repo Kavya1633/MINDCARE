@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="serviceJs.js"></script>
+    <link rel="icon" href="images/logo.png" type="image/x-icon">
+</head>
+<body>
+    <header id="navbar">
+        <div class="logo">
+            <img src="images/logo.png" alt="Logo">
+        </div>
+        <div class="logo-text">CalmNest</div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="/Resources.html">Resources</a></li>
+                <!-- <li><a href="services.html">Services</a></li> -->
+                <li>Login</li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!-- tab links -->
+    <button class="tablink first" onclick="openPage('Podcast', this, 'rgba(139, 0, 0, 0.700)')" id="defaultOpen">Podcast</button>
+    <button class="tablink" onclick="openPage('Workshops', this, 'rgba(139, 0, 0, 0.700)')">Workshops</button>
+    <button class="tablink" onclick="openPage('Therapysession', this, 'rgba(139, 0, 0, 0.700)')">Therapy Session</button>
+
+    <div id="Podcast" class="tabcontent">
+      <div class="pod-container">
+        <!-- <img src="images/podcast.png"/> -->
+        <iframe width="800" height="400" src="https://www.youtube.com/embed/5jnEizYzQl0?si=d80-HukrWNU1GQsm" title="YouTube video player" frameborder="3" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      </div>
+
+    <div class="pod-class">
+      <div class="pod-container1"> 
+        <iframe width="580" height="320" src="https://www.youtube.com/embed/D74vLgMYOxM?si=SuZQPcG3jhtQJpVv" title="YouTube video player" frameborder="3" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      </div>
+      <div class="pod-container1">
+        <iframe width="580" height="320" src="https://www.youtube.com/embed/gYeHV_nA36c?si=CV3xsdjpUFpFEaz4" title="YouTube video player" frameborder="3" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      </div>
+    </div>
+    <div class="pod-class">
+        <div class="pod-container1">
+            <iframe width="580" height="320" src="https://www.youtube.com/embed/LnJwH_PZXnM?si=kyQqmAsKTqfk9Tu4" title="YouTube video player" frameborder="3" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+        <div class="pod-container1">
+            <iframe width="580" height="320" src="https://www.youtube.com/embed/210uLW5dh8w?si=ztNYivq52FlEF1pB" title="YouTube video player" frameborder="3" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+      </div>
+      <div class="pod-class">
+        <div class="pod-container1">
+          <iframe width="580" height="320" src="https://www.youtube.com/embed/QFbupLSlPLE?si=a3BfHN6lL6d7skVN" title="YouTube video player" frameborder="3" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+        <div class="pod-container1">
+          <iframe width="580" height="320" src="https://www.youtube.com/embed/1lQ4bfQqRRo?si=_7MY1PTK8j1PbCOi" title="YouTube video player" frameborder="3" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+      </div>
+   
+    
+    </div>
+    
+    <div id="Workshops" class="tabcontent">
+      <h3>News</h3>
+      <p>Some news this fine day!</p>
+    </div>
+    
+    <div id="Therapysession" class="tabcontent">
+      <h3>Contact</h3>
+      <p>Get in touch, or swing by for a cup of coffee.</p>
+    </div>
+
+     <!-- Footer -->
+     <footer class = "foot">
+        <p>&copy; 2024 CalmNest. All Rights Reserved.</p>
+    </footer>
+    
+</body>
+</html>
