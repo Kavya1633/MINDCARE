@@ -470,9 +470,9 @@ button:hover{
     display: none;
     padding: 40px 10px;
     margin: 1px 60px;
-    height: 195vh;
+    height: 180vh;
     margin-bottom: 3rem;
-    border:double 2px #0d0d0d;
+    /* border:double 2px #0d0d0d; */
   }
   
   #Podcast {background-image: linear-gradient(var(--white),var(--white)); }
